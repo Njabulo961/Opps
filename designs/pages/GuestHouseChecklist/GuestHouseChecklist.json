@@ -1,0 +1,13 @@
+{
+    "appPageId": "89bc9209-1d5d-1951-5fac-415dd10b4e10",
+    "appPageName": "GuestHouseChecklist",
+    "componentName": "guesthousechecklistComponent",
+    "selectorName": "bh-guesthousechecklist",
+    "htmlFileName": "guesthousechecklist.template.html",
+    "tsFileName": "guesthousechecklist.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

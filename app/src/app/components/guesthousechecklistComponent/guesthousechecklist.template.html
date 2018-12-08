@@ -1,0 +1,19 @@
+<header style="background-image:  url(&apos;http://www.nidahspa.com/wp-content/uploads/2013/11/Wine-Cellar-With-Dining-Room.jpg&apos;); margin-top: 0; padding: 5rem; background-size: cover; background-repeat: no-repeat; opacity: 0.8;">
+  <h1 style="text-align: center; text-shadow: 2px 2px black; color: white;">Need something fixed?</h1>
+  <p style="text-align: center; text-shadow: 2px 2px black; color: white; font-size: 1.5rem;">If there is anything that needs to be done in the guesthouses; please let us know below:</p>
+</header>
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" ngClass.xs="cardxs" ngClass.gt-xs="card">
+  <div fxLayout="column wrap" fxLayoutAlign="center none" fxShow="true" fxHide="false">
+    <h4 style="color: red; text-align: center; font-size: 1.2rem;">Guest House Services</h4>
+    <p style="text-align: center;">Fields marked with an * are required</p>
+    <mat-form-field><textarea matInput="" placeholder="What is the problem?" required></textarea></mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Guest House" required>
+        <mat-option *ngFor="let option of options" [value]="option">{{ option }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field><input matInput="" type="number" placeholder="Unit Number" required></mat-form-field>
+    <mat-form-field><input matInput="" type="string" placeholder="When would you like the problem resolved? " required></mat-form-field>
+    <mat-form-field><textarea matInput="" placeholder="Anything else you would like us to know?" required></textarea></mat-form-field><button mat-button="" style="color: white; background-color: red; font-weight: bold; width: 1rem; margin: auto;" type="">Submit</button>
+  </div>
+</div>
